@@ -1,0 +1,41 @@
+.front-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-bottom: 2em;
+
+    > .contentbox {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    /// Medium devices (landscape tablets, 768px and up)
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        padding-bottom: 4em;
+
+        > .imagebox {
+            border-radius: .3em;
+            overflow: hidden;
+
+            > .image {
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+
+.profile-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+
+    > .imagebox {
+        flex-basis: 5em;
+    }
+}

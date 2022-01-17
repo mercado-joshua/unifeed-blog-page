@@ -1,0 +1,29 @@
+.posts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-bottom: 2em;
+
+    /// Small devices (portrait tablets and large phones, 600px and up)
+    @media only screen and (min-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    }
+
+    /// Medium devices (landscape tablets, 768px and up)
+    @media only screen and (min-width: 768px) {
+        padding-bottom: 4em;
+    }
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    > .contentbox {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}

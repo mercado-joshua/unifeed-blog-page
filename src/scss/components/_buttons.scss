@@ -1,0 +1,20 @@
+.hamburger-btn {
+    background-color: transparent;
+}
+
+.subscribe-btn {
+    border-radius: .5rem;
+    padding: .5em 1em;
+    background-color: #ee7c0d;
+    font-weight: bold;
+    transition: opacity ease-in-out 250ms,
+        transform 150ms ease;
+
+    &:where(:focus, :hover) {
+        opacity: .7;
+    }
+
+    &:where(:active) {
+        transform: scale(0.99);
+    }
+}
